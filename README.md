@@ -30,3 +30,28 @@ Integrantes:
     # Se hace remote el repositorio
     $ git remote add orgin git@<service>:<user>/<repo>.git
     ```
+
+7. ¿Para qué ayuda el `git stash`? <br>
+    Para poder guardar los cambios sin hacer commit asi mismo se puede hacer una pila de cambios siendo aplicados en cualaquier rama.
+
+8. ¿Cuál es la diferencia entre `git stash pop` y `git stash apply`? <br>
+    - `git stash apply` se recuperan los cambios almacenados en la pila o por algun identificador.
+    - `git stash pop` se aplica los cambios almacenados y lo retira de la pila.
+
+9. ¿Qué significa el modo interactivo del `git rebase`? <br>
+    Poder unificar dos ramas con un orden especifico, eliminando commits entre otras acciones
+
+10. ¿Cual es la diferencia entre la shell y la terminal? <br>
+    Shell es el programa que procesa los comandos devolviendo un resultado y terminal es el programa donde se ejecuta el shell.
+
+11. ¿Que hace estos comandos? `git clone`, `git status`, `git add`, `git commit`, `git push`, `git checkout`, `git stash`, `git rebase`, `git merge`, `git branch` <br>
+    - `git clone` clonar un repositorio remoto
+    - `git status` ver el estado del respositorio si hay cambios para guardar o conflictos
+    - `git add` agregar los nuevos cambios para ser trackeados
+    - `git commit` guardar los cambios en la rama establecida
+    - `git push` subir todo los commits de local al repositorio remoto
+    - `git checkout` permite moverse entre ramas  
+    - `git stash` almacenar cambios en una pila para poder usarlos despues o en otras ramas
+    - `git rebase` unificar ramas y gestionando los commits
+    - `git merge` unificando ramas y haciendo un consolidado
+    - `git branch` poder gestionar las ramas como crear eliminar editar o listado
