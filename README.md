@@ -2,6 +2,7 @@
 Capacitación: Git, bash y docker
 Integrantes:
 - Luis Miguel Reyes Rodriguez
+- Leo
 
 ### <strong>Preguntas</strong>
 
