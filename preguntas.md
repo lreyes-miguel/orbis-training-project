@@ -55,3 +55,61 @@ Integrantes:
     - `git rebase` unificar ramas y gestionando los commits
     - `git merge` unificando ramas y haciendo un consolidado
     - `git branch` poder gestionar las ramas como crear eliminar editar o listado
+
+#
+
+## Docker
+### <strong>Parte 4</strong>
+
+#### Preguntas
+
+1. ¿Qué importancia tiene los tags en un proyecto?
+    * Se usa para saber con que versión trabajar ya que las versiones.
+
+
+2. ¿Cuál es la diferencia entre un tag normal y un tag anotado en git?
+    * Con el tag anotado muestra mas información que el tag simple.
+
+3. ¿Cómo se sube todos los tags de git que hay en mi local?
+    * Ejecutando el siguiente comando:
+    ``` 
+    git push origin master --tags
+    ```
+
+4. ¿Es necesario loguearse cada vez que subo una imagen a dockerhub?
+    * Una vez que te logueaste tiene una expiración de 72 horas pasado ese tiempo te pedira nuevamente loguearte.
+
+5. ¿Qué es y para qué sirve docker?
+    * Una plataforma de codigo libre para desarrollar de una manera estandar,  
+
+6. ¿Cuál es la diferencia entre docker y VirtualBox (virtualización)?
+    * En docker usa el kernel del sistema operativo para poder crear sus recursos medienta Docker engine mientras que en Virtualbox creas una maquina virtual consumiendo mas recursos y la comunicación es con Hypervisor.
+
+7. ¿Es necesario depender de una imagen de docker base al crear una imagen nueva?
+    * Si es necesario ya que se aplicaría las buenas practicas. 
+
+8. ¿Porqué debo anteponer el nombre de usuario en una imagen docker nueva?
+    * Se debe anteponer el nombre de usuario a nuestra imagen para asociar nuestra imagen a nuestra cuenta de dockerhub.
+
+9. ¿Que pasa si creo una imagen sin especificar una versión o tag, con qué versión se crea?
+    * Si no se versiona (o se le asigna el user-name/name-project:tag) o se asigna el tag al subirla por defecto esta toma como tag o versión la parabra `latest`
+
+#
+
+### <strong>Parte 5</strong>
+
+#### Preguntas
+
+1. Listar
+    * ¿Porqué es necesario crear un contenedor con esta bandera -it ? ¿Qué pasa si no le pongo -it?
+        - Par ser de manera interactiva y pueda darte una respuesta del bash, al no colocar `-it` se muestra de una manea desordenada.
+    * ¿Para qué sirve ejecutar el comando bash al ejcutar una imagen?
+        - Para entrar a la consola del contenedor para poder usar el shell del contenedor con nuestra terminal.
+2. ¿Cuál es la diferencia entre docker ps y docker ps -a?
+    * Que `docker ps -a` muestra todos los contenedores levantados y apagados
+
+#
+
+```
+docker run -it lreyes8/orbis-training-docker:0.2.0
+```
