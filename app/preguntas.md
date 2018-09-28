@@ -113,3 +113,35 @@ Integrantes:
 ```
 docker run -it lreyes8/orbis-training-docker:0.2.0
 ```
+
+
+#
+
+### Preguntas:
+
+1. ¿Cuál es la diferencia entre una imagen y un contenedor?
+    - Imagen
+    - Contenedor 
+
+2. ¿Cómo listo las imágenes que hay en mi computadora?
+    - `docker images`
+3. ¿Cómo salgo de un contenedor de docker?
+    - `exit`
+4. ¿Se elimina el contenedor al salir de ella?
+    - Si
+5. ¿Cómo elimino un contenedor?
+    -  `docker rm <id>`
+6. ¿Para qué es necesario el flag `-i`, `-t`, `--rm`?
+    - `-i` para mostrar de manera interactiva 
+    - `-t` para ejecutar el terminal
+    - `--rm` automticamente remueve el contenedor si es que existe
+7. ¿Cómo verifico que el archivo creado se encuentra en la imagen?
+    - `docker run -it lreyes8/orbis-training-docker:0.2.0 ls`
+8. ¿Cómo se comenta una linea de código en Dockerfile?
+    - `#`
+
+#
+
+```
+docker run -d -p "1080:80" lreyes8/orbis-training-docker:1.0.0
+```
