@@ -145,3 +145,14 @@ docker run -it lreyes8/orbis-training-docker:0.2.0
 ```
 docker run -d -p "1080:80" lreyes8/orbis-training-docker:1.0.0
 ```
+#
+
+### Preguntas
+1. ¿Qué es NGINX?
+    - Un servidor web
+2. ¿Cómo expongo puertos en docker?
+    - `docker run -d -p "1080:80" lreyes8/orbis-training-docker:1.0.0`
+3. ¿Cómo especifico los puertos al levantar un contenedor (docker run)?
+    - Con el comando anterior `-p` el 1080 es puerto del host y 80 del contenedor
+4. ¿Cómo hago 'forward' al levantar un contenedor (docker run)?
+    - `-p "1080:80"`
