@@ -1,7 +1,12 @@
 version: '3'
 
 services:
-  orbis-training-project:
-    image: lreyes8/orbis-training-docker:2.0.0
-    ports:
-      - "1080:80"
+ orbis-training-project:
+   build: .
+   volumes:
+     - ./:/app
+   command: npm start
+   working_dir: /app
+   ports:
+     - "1042:3030"
+     - "35729:35729"
