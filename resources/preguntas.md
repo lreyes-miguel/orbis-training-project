@@ -196,3 +196,10 @@ docker run -d -p "1080:80" lreyes8/orbis-training-docker:1.0.0
     - Si, siempre se haga un seteo de un alias al programa
 5. ¿Cómo se envía variables de entorno por Docker CLI y docker-compose?
     - Se estable con el flag envirment `docker run -e "var=value" lreyes8/orbis-training-docker:2.0.0`
+
+#
+
+1. ¿Para qué sirve el archivo `Makefile`?
+    - Sirve para poder ejecutar comandos y agruparlos para un determinado fin dentro de un target
+2. ¿Qué es un `target` en `Makefile`?
+    - Es una etiqueta que nos permite ejecutar una serie de comandos
