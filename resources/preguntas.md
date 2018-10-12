@@ -156,3 +156,26 @@ docker run -d -p "1080:80" lreyes8/orbis-training-docker:1.0.0
     - Con el comando anterior `-p` el 1080 es puerto del host y 80 del contenedor
 4. ¿Cómo hago 'forward' al levantar un contenedor (docker run)?
     - `-p "1080:80"`
+
+----
+## <strong>Parte 7</strong>
+
+#### Preguntas
+
+1. ¿Es necesario especificar el `workdir` en docker?, ¿Porqué?
+    - Si, por que debe establecer la carpeta donde se trabajara al momento de levantar el contenedor.
+
+2. ¿Que hacen los siguientes comandos?
+    - `docker ps`: Muestra los contenedores levantados
+    - `docker pull`: Descarga la imagen de la nube o una red local
+    - `docker push`: Sube la imagen al repositorio en la nube o local
+    - `docker rm`: Elimina el contenedor
+    - `docker rmi`: Elimina la imagen
+    - `docker run`: Ejecuta el contenedor con comandos adicionales
+    - `docker tag`: Se establece un tag para versionar la imagen
+    - `docker search`: Busca imagenes o caracteristicas de las imagenes
+    - `docker login`: Iniciar sesion para poder subir imagenes al repositorio
+    - `docker exec`: Ejecutar comandos en un contenedor existente
+    - `docker build`: Construye una imagen a base de un archivo de configuracion Dockerfile
+    - `docker inspect`: Inspecciona la red 
+    - `docker network`: Crea una red virtual para poder compartir recursos con otros contenedores
