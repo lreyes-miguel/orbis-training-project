@@ -179,3 +179,20 @@ docker run -d -p "1080:80" lreyes8/orbis-training-docker:1.0.0
     - `docker build`: Construye una imagen a base de un archivo de configuracion Dockerfile
     - `docker inspect`: Inspecciona la red 
     - `docker network`: Crea una red virtual para poder compartir recursos con otros contenedores
+
+## <strong>Parte 8</strong>
+
+#### Preguntas
+
+1. ¿Qué es bash? ¿Qué significa?
+    - Bash es el lenguaje que ejecuta scripts que pueden ser comandos.
+
+2. ¿Cómo ejecuto un archivo bash?
+    - Se ejecuta ./script.sh
+
+3. ¿Qué pasa si no especifico en un `.sh`, la linea `#!/bin/bash`?
+    - Ocurre un error de formato para ejecutar el bash
+4. ¿Se puede cambiar el modo bash (`/bin/bash`) a otro tipo de ejecución?
+    - Si, siempre se haga un seteo de un alias al programa
+5. ¿Cómo se envía variables de entorno por Docker CLI y docker-compose?
+    - Se estable con el flag envirment `docker run -e "var=value" lreyes8/orbis-training-docker:2.0.0`
