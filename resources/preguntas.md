@@ -203,3 +203,99 @@ docker run -d -p "1080:80" lreyes8/orbis-training-docker:1.0.0
     - Sirve para poder ejecutar comandos y agruparlos para un determinado fin dentro de un target
 2. ¿Qué es un `target` en `Makefile`?
     - Es una etiqueta que nos permite ejecutar una serie de comandos
+
+
+<hr>
+
+## <strong>Ejercicio Linux, Makefile, Jenkins</strong>
+
+### Parte 10
+
+#### 7. PREGUNTAS:
+
+1. ¿Qué significa el comando -d?
+    - Para verificar el directorio
+2. ¿Porqué la sentencia comienza con @?
+    - Para no imprimir la linea de comando
+3. ¿Para qué sirve el comando mkdir?
+    - Para crear una carpeta `mkdir dir`
+4. Explicar lo que hace la función mkdir_deploy_dir
+    - Verificar si existe la carpeta caso contrario crear
+
+### 8. PREGUNTAS:
+
+1. ¿Para qué sirve el uso de \?
+    - Para dar un salto de linea en el comando
+2. ¿Para qué sirve el uso de &&?
+    - Para concatenar los comandos
+3. ¿Qué función cumple usar los argumentos -rf?
+    - Eliminar todo lo recursivo 
+4. Explicar lo que hace la función git_init (linea por linea)
+    - Ingresa a la carpeta repo
+    - Elimina el directorio .git
+    - Inicializa un nuvo repositorio
+
+### 9. PREGUNTAS:
+
+1. ¿Para qué sirve el uso de eval?
+    - Establecer toda la linea de comandos
+2. ¿Para qué sirve el uso de shell?
+    - La ejecucion de shell
+3. ¿Para qué sirve el uso de `git log --pretty=format:"%an"`?
+    - Mostrar el log con un formato especifico
+4. ¿Cuál es la diferencia en usar `git config y git config --global`?
+    - `git config` solo configura el repositorio donde se trabaja
+    - `git config --global` Para establecer configuraciones de git como usuario y contraseña
+5. Explicar lo que hace la función git_config (línea por línea)
+    - Obtiene el usuario y correo en el histrial de git
+    - Ingresar a la carpeta del repositorio y establecer globalmente el usuario y contraseña de git
+
+### 10. PREGUNTAS:
+
+1. ¿Para qué sirve el uso de `awk`?
+    - <strong>Awk</strong> es más útil cuando se manejan archivos de texto que están formateados de una manera predecible. Por ejemplo, es excelente para analizar y manipular datos tabulares. Opera línea por línea y se repite en todo el archivo.
+2. ¿Para qué sirve el uso de `sed`?
+    - <strong>sed</strong> es un editor de texto que realiza operaciones de edición en información proveniente de una entrada estándar o un archivo. Sed edita línea por línea y de forma no interactiva.
+3. Explicar lo que hace la función git_add_remote_repository
+    - Obtiene la url del reposiotorio origen y lo establece en una variable
+    - Reemplaza la variable anterior para obtener la url y guardarla en otra variable
+    - Asigna la url para el repositorio remoto
+
+### 11. PREGUNTAS:
+
+1. Explicar lo que hace la función create_branch_gh_pages
+    - Crear una rama en git
+
+#### 12. PREGUNTAS:
+
+1. Explicar lo que hace la función copy_files_to_deploy
+    - Copia los archivos gp-pages a build
+
+### 13. PREGUNTAS:
+
+1. Explicar lo que hace la función git_add
+    - Agrega todos los archivos que han sido creados o modificados para poder guardarlos despues
+
+#### 14. PREGUNTAS:
+
+1. Explicar lo que hace la función create_commit (línea por línea)
+    - Obtiene el ultimo mensaje de commit y lo asigna al nuevo commit a realizar
+
+#### 15. PREGUNTAS:
+
+1. Explicar lo que hace la función git_push (línea por línea)
+    - Sube el commit o commits al repositorio remoto
+
+#### 16. PREGUNTAS:
+
+1. Explicar lo que hace la función clean_workspace
+    - Eliminar una carpeta gh-pages
+
+### 17. PREGUNTAS:
+
+1. ¿Para qué sirve el uso de ifeq?
+    - 
+2. ¿Para qué sirve el uso de strip?
+    -
+3. Explicar lo que hace la función show_deploy_url (línea por línea)
+    - 
